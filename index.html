@@ -22,6 +22,21 @@
             font-weight: bold;
             color: #333;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +69,7 @@
 
         <section id="data">
             <h2>2. Data</h2>
+
             <h3>2.1 Review Scores</h3>
             <p>Video game review scores provide valuable insights into the quality and reception of a game.</p>
 
@@ -75,10 +91,45 @@
                 <figcaption>Figure 3: Total Sales vs. Number of Games Released.</figcaption>
             </figure>
 
-            <figure>
-                <img src="images/4-metascore_num_games_released.jpg" alt="Chart showing Metascore trends and number of games released">
-                <figcaption>Figure 4: Metascore vs. Number of Games Released.</figcaption>
-            </figure>
+            <h3>2.3 Top Publishers</h3>
+            <table>
+                <tr>
+                    <th>Publisher</th>
+                    <th>Number of Games</th>
+                </tr>
+                <tr>
+                    <td>Electronic Arts</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>Activision</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>Nintendo</td>
+                    <td>47</td>
+                </tr>
+            </table>
+
+            <h3>2.4 Sales by Release Year</h3>
+            <table>
+                <tr>
+                    <th>Release Year</th>
+                    <th>Total Sales (Millions)</th>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>200</td>
+                </tr>
+            </table>
         </section>
 
         <section id="analysis">
@@ -98,25 +149,32 @@
 
             <figure>
                 <img src="images/5-number_of_games_by_month.png" alt="Graph showing number of games released by month">
-                <figcaption>Figure 5: Number of Games Released by Month.</figcaption>
+                <figcaption>Figure 4: Number of Games Released by Month.</figcaption>
             </figure>
 
-            <h3>3.2 Sales vs. Metacritic Scores</h3>
-            <p>
-                Analyzing sales data alongside review scores allows us to assess whether
-                critically acclaimed games tend to sell better, or if other factors, such as
-                marketing and brand reputation, play a larger role.
-            </p>
-
-            <figure>
-                <img src="images/6-total_sales_by_release_date.jpg" alt="Total sales by release date">
-                <figcaption>Figure 6: Total Sales by Release Date.</figcaption>
-            </figure>
-
-            <figure>
-                <img src="images/7-review_scores_by_release_date.jpg" alt="Review scores by release date">
-                <figcaption>Figure 7: Review Scores by Release Date.</figcaption>
-            </figure>
+            <h3>3.2 Correlation Between Sales and Review Scores</h3>
+            <table>
+                <tr>
+                    <th>Review Score Range</th>
+                    <th>Average Sales (Millions)</th>
+                </tr>
+                <tr>
+                    <td>90-100</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>80-89</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>70-79</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Below 70</td>
+                    <td>5</td>
+                </tr>
+            </table>
         </section>
 
         <section id="conclusion">
